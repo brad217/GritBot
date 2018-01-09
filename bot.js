@@ -174,13 +174,7 @@ function respond() {
     postMessage("https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif");
     this.res.end();
   }
-  else if(request.text && botRegexPrz.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1280x687.png.add1b915c55844638d3b4b350b01949d");
-    this.res.end();
-   }
-  
-   else {
+  else {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
